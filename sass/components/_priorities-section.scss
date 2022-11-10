@@ -1,0 +1,30 @@
+.priorities {
+    padding-top: 94px;
+&__row {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+&__label {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        color: var(--main-text-color);
+    }
+&__text {
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--secondary-text-color);
+    }
+&__icon {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+}
