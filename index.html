@@ -17,8 +17,21 @@
         <div class="header__menu">
         <a class="header-logo" lang="en" href=".//index.html">
             <span class="header-logo__web">Web</span><span class="header-logo__studio">Studio</span>
-            </a>
+            </a> 
         <nav>
+            <button 
+                type="button" 
+                class="burger-button is-open js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                data-menu-button>
+                    <svg class="mobile-menu__open" 
+                        width="40px" height="40px"
+                        aria-label="Перемикач мобільного меню">
+                        <use href="./images/sprite.svg#open-burger"></use>
+                    </svg>
+            </button>
+
         <ul class="site-nav">
             <li>
                 <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a></li>
@@ -81,7 +94,7 @@
                 <h3 class="priorities__label">ПЛАНУВАННЯ</h3>
                 <p class="priorities__text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li class="list-tehnologies">
+            <li class="priorities__column">
                 <div class="priorities__icon">
                 <svg width="70px" height="70px">
                     <use href="./images/sprite.svg#icon-astronaut"></use>
@@ -136,7 +149,7 @@
     <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__row">
-                <li>
+                <li class="team__list">
                     <div class="team-card">
                         <img class="team-card__image" src="./images/ihor.jpg" alt="Ігор Дем'яненко" width="270"/>
                         <h3 class="team-card__name">Ігор Дем'яненко</h3>
@@ -163,7 +176,7 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li class="team__list">
                     <div class="team-card">
                         <img class="team-card__image" src="./images/olha.jpg" alt="Ольга Рєпіна" width="270"/>
                         <h3 class="team-card__name">Ольга Рєпіна</h3>
@@ -190,7 +203,7 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li class="team__list">
                     <div class="team-card">
                         <img class="team-card__image" src="./images/kolya.jpg" alt="Микола Тарасов" width="270"/>
                         <h3 class="team-card__name">Микола Тарасов</h3>
@@ -217,7 +230,7 @@
                         </ul>
                     </div>
                     </li>
-                <li>
+                <li class="team__list">
                     <div class="team-card">
                         <img class="team-card__image" src="./images/misha.jpg" alt="Михайло Єрмаков" width="270"/>
                         <h3 class="team-card__name">Михайло Єрмаков</h3>
@@ -287,9 +300,10 @@
 </main>
 <footer class="section footer">
     <div class="container footer__row">
+        <div class="footer-nav">
         <div class="footer__contacts">
-        <a class="header-logo" lang="en" href=".//index.html">
-            <span class="header-logo__web">Web</span><span class="header-logo__studio--inverse">Studio</span>
+        <a class="footer-logo" lang="en" href=".//index.html">
+            <span class="footer-logo__web">Web</span><span class="footer-logo__studio--inverse">Studio</span>
             </a>
                 <address class="footer__adress">
                 м. Київ, пр-т Лесі Українки, 26
@@ -322,6 +336,7 @@
                             </svg></a></li>
                     </ul>
         </div>
+    </div>
         <form class="footer__subscribe">
             <h3 class="footer__invite">підпишіться на розсилку</h3>
             <input class="footer-input"
@@ -422,6 +437,52 @@
         </button>
     </div>
 </div>
+<div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
+    <button class="mobile-menu__cross js-close-menu" type="button">
+        <svg width="40px" height="40px">
+            <use class="mobile-menu__icon" href="./images/sprite.svg#close-burger"></use>
+        </svg>
+    </button>
+<div class="mobile-menu__nav">
+    <ul>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./index.html">Студія</a></li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">Контакти</a></li>
+    </ul>
+</div>
+<div>
+<div class="mobile-menu__contact">
+    <ul>
+        <li class="mobile-menu__contact-list">
+            <a class="mobile-menu__contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__contact-list">
+            <a class="mobile-menu__contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+    </ul>
+</div>
+<div class="mobile-menu__messengers">
+    <ul class="mobile-menu__messengers-list">
+        <li class="mobile-menu__messengers-item">
+            <a class="mobile-menu__messengers-link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-menu__messengers-item">
+            <a class="mobile-menu__messengers-link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-menu__messengers-item">
+            <a class="mobile-menu__messengers-link" href="#">Facebook </a>
+        </li>
+        <li class="mobile-menu__messengers-item">
+            <a class="mobile-menu__messengers-link" href="#">LinkedIn</a>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

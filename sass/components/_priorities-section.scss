@@ -1,10 +1,46 @@
 .priorities {
-    padding-top: 94px;
-&__row {
-        display: flex;
-        list-style: none;
-        gap: 30px;
+    @media screen and (max-width: 1199px) {
+        padding: 60px 0px;
     }
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+    }
+&__row {
+        list-style: none;
+        @media screen and (min-width: 480px) {
+            display: block;
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px -15px;
+
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+    }
+&__column {
+    @media screen and (min-width: 480px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 30px)/2);
+        margin: 15px;
+    }
+        &:not(:last-child) {
+            @media screen and (max-width: 479px) {
+                margin-bottom: 30px;
+            }
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 4 * 30px))/4;
+        margin: 0px 15px;
+    }
+
+}
 &__label {
         margin-bottom: 10px;
         font-weight: 700;
@@ -19,12 +55,20 @@
     }
 &__icon {
         display: flex;
-        width: 270px;
         height: 120px;
         background-color: #F5F4FA;
         margin-bottom: 30px;
         border-radius: 4px;
         align-items: center;
         justify-content: center;
+            @media screen and (min-width: 480px) {
+
+            }
+            @media screen and (min-width: 768px) {
+                
+            }
+            @media screen and (min-width: 1170px) {
+                height: 120px;
+            }
     }
 }

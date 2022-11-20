@@ -1,6 +1,10 @@
 .products {
     padding-top: 94px;
     padding-bottom: 94px;
+        @media screen and (max-width: 1170px) {
+        display: none;
+        }
+
 &__title {
         text-align: center;
     

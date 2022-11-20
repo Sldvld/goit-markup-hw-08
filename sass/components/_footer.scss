@@ -5,9 +5,24 @@
         display: block;
     }
 &__row {
-        display: flex;
-        align-items: baseline;
-        gap: 70px;
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        @media screen and (min-width: 768px) {
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: start;
+            gap: 70px;
+        }
     }
 &__adress {
         display: block;
@@ -36,6 +51,13 @@
 }
 &__messengers {
     display: block;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 768px) {
+
+    }
 }
 &__invite {
     margin-bottom: 20px;
@@ -47,27 +69,88 @@
 }
 &__subscribe {
     display: block;
-    margin-left: 23px;
+    @media screen and (min-width: 480px) {
+
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        display: block;
+        align-items: start;
+        margin-top: 0;
+    }
 }
 &__nav:hover,
 &__nav:focus {
     color: var(--brand-color);
 }
 }
+.footer-nav {
+    @media screen and (min-width: 480px) {
+
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 70px;
+    }
+}
 .logo {
     display: block;
 }
-.header-logo__studio--inverse {
+.footer-logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+        @media screen and (min-width: 768px) {
+            display: block;
+            margin-bottom: 28px;
+            font-size: 24px;
+            line-height: 1.17;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
+    &__web {
+        color: var(--brand-color);
+    }
+}
+.footer-logo__studio--inverse {
     display: inline-block;
-    margin-bottom: 20px;
+
 
     letter-spacing: 0.03em;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     text-decoration: none;
     color: var(--main-white-color);
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.17;   
+        margin-bottom: 28px;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+        margin-bottom: 20px;
+    }
 }
 .invite-list {
     list-style: none;
@@ -97,7 +180,6 @@
 .subscribe-button {
     display: inline-flex;
     align-items: center;
-    margin-left: 12px;
     padding: 10px 28px;
     cursor: pointer;
     min-width: 200px;
@@ -115,6 +197,16 @@
     letter-spacing: 0.06em;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        margin-top: 0;
+    }
 &__icon {
       width: 24px;
       height: 24px;
@@ -134,7 +226,7 @@
 }
 .footer-input {
     outline: none;
-    width: 358px;
+    // min-width: 358px;
     height: 50px;
     margin: 0;
     padding: 15px 16px;
@@ -146,7 +238,17 @@
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.25;
+    @media screen and (min-width: 480px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        width: 358px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
+
 .subscribe input::placeholder {
     font-weight: 400;
     font-size: 16px;
