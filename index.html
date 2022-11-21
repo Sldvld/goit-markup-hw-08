@@ -112,6 +112,7 @@
             <li>
                 <div class="products-card">
                 <img 
+                    srcset="./images/startup.jpg 1x, ./images/startup@2x.jpg 2x "
                     src="./images/startup.jpg"
                     alt="Розробка проекту"
                     width="370"/>
@@ -123,6 +124,7 @@
             <li>
                 <div class="products-card">
                 <img 
+                    srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg 2x"
                     src="./images/mobile.jpg"
                     alt="Синхронізація мобільних застосунків"
                     width="370"/>
@@ -134,6 +136,7 @@
             <li>
                 <div class="products-card">
                 <img 
+                    srcset="./images/design.jpg 1x, ./images/design@2x.jpg 2x"
                     src="./images/design.jpg"
                     alt="Дизайн"
                     width="370"/>
@@ -151,7 +154,18 @@
         <ul class="team__row">
                 <li class="team__list">
                     <div class="team-card">
-                        <img class="team-card__image" src="./images/ihor.jpg" alt="Ігор Дем'яненко" width="270"/>
+                        <img
+                        srcset="./images/ihor-img.jpg 450w, 
+                                ./images/ihor@2x.jpg 900w,
+                                ./images/ihor-tablet.jpg 354w,
+                                ./images/ihor-tablet@2x.jpg 708w,
+                                ./images/ihor-laptop.jpg 270w,
+                                ./images/ihor-laptop@2x.jpg 540w"
+                        class="team-card__image" 
+                        src="./images/ihor.jpg" 
+                        alt="Ігор Дем'яненко"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw "
+                        />
                         <h3 class="team-card__name">Ігор Дем'яненко</h3>
                         <p class="team-card__speciality" lang="en">Product Designer</p>
                         <ul class="messengers">
@@ -178,7 +192,18 @@
                 </li>
                 <li class="team__list">
                     <div class="team-card">
-                        <img class="team-card__image" src="./images/olha.jpg" alt="Ольга Рєпіна" width="270"/>
+                        <img
+                        srcset="./images/olha-img.jpg 450w, 
+                                ./images/olha@2x.jpg 900w,
+                                ./images/olha-tablet.jpg 354w,
+                                ./images/olha-tablet@2x.jpg 708w,
+                                ./images/olha-laptop.jpg 270w,
+                                ./images/olha-laptop@2x.jpg 540w"
+                        class="team-card__image" 
+                        src="./images/olha.jpg" 
+                        alt="Ольга Рєпіна"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw "
+                        />
                         <h3 class="team-card__name">Ольга Рєпіна</h3>
                         <p class="team-card__speciality" lang="en">Frontend Developer</p>
                         <ul class="messengers">
@@ -205,7 +230,18 @@
                 </li>
                 <li class="team__list">
                     <div class="team-card">
-                        <img class="team-card__image" src="./images/kolya.jpg" alt="Микола Тарасов" width="270"/>
+                        <img
+                        srcset="./images/kolya-img.jpg 450w, 
+                                ./images/kolya@2x.jpg 900w,
+                                ./images/kolya-tablet.jpg 354w,
+                                ./images/kolya-tablet@2x.jpg 708w,
+                                ./images/kolya-laptop.jpg 270w,
+                                ./images/kolya-laptop@2x.jpg 540w"
+                        class="team-card__image" 
+                        src="./images/kolya.jpg" 
+                        alt="Микола Тарасов"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw "
+                        />
                         <h3 class="team-card__name">Микола Тарасов</h3>
                         <p class="team-card__speciality" lang="en">Marketing</p>
                         <ul class="messengers">
@@ -232,7 +268,18 @@
                     </li>
                 <li class="team__list">
                     <div class="team-card">
-                        <img class="team-card__image" src="./images/misha.jpg" alt="Михайло Єрмаков" width="270"/>
+                        <img
+                        srcset="./images/misha-img.jpg 450w, 
+                                ./images/misha@2x.jpg 900w,
+                                ./images/misha-tablet.jpg 354w,
+                                ./images/misha-tablet@2x.jpg 708w,
+                                ./images/misha-laptop.jpg 270w,
+                                ./images/misha-laptop@2x.jpg 540w"
+                        class="team-card__image"
+                        src="./images/misha.jpg" 
+                        alt="Михайло Єрмаков"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw "
+                        />
                         <h3 class="team-card__name">Михайло Єрмаков</h3>
                         <p class="team-card__speciality" lang="en">UI Designer</p>
                         <ul class="messengers">
@@ -264,32 +311,32 @@
     <div class="container">
         <h2 class="partners__title">Постійні клієнти</h2>
         <ul class="partners__row">
-            <li><a href="" class="partners__link">
+            <li class="partners__item"><a href="" class="partners__link">
                 <svg class="partners__icon" width="106" height="60">
                     <use href="./images/sprite.svg#icon-logo1"></use>
                 </svg>
             </a></li>
-            <li><a href="" class="partners__link">
+            <li class="partners__item"><a href="" class="partners__link">
                 <svg class="partners__icon" width="106" height="60">
                     <use href="./images/sprite.svg#icon-logo2"></use>
                 </svg>
             </a></li>
-            <li><a href="" class="partners__link">
+            <li class="partners__item"><a href="" class="partners__link">
                 <svg class="partners__icon" width="106" height="60">
                     <use href="./images/sprite.svg#icon-logo3"></use>
                 </svg>
             </a></li>
-            <li><a href="" class="partners__link">
+            <li class="partners__item"><a href="" class="partners__link">
                 <svg class="partners__icon" width="106" height="60">
                     <use href="./images/sprite.svg#icon-logo4"></use>
                 </svg>
             </a></li>
-            <li><a href="" class="partners__link">
+            <li class="partners__item"><a href="" class="partners__link">
                 <svg class="partners__icon" width="106" height="60">
                     <use href="./images/sprite.svg#icon-logo5"></use>
                 </svg>
             </a></li>
-            <li><a href="" class="partners__link">
+            <li class="partners__item"><a href="" class="partners__link">
                 <svg class="partners__icon" width="106" height="60">
                     <use href="./images/sprite.svg#icon-logo6"></use>
                 </svg>
