@@ -1,10 +1,12 @@
 .hero {
     background: #2F303A;
-    padding: 200px 0px;
+    padding: 118px 0px;
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0px;
+    }
 }
 .hero {
     max-width: 1600px;
-    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;

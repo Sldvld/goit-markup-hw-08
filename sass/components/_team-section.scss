@@ -10,20 +10,12 @@
 &__title {
         text-align: center;
         font-weight: 700;
-    
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
         color: var(--main-text-color);
-        @media screen and (max-width: 767px){
-            margin-bottom: 36px;
-        }
-        @media screen and (min-width: 480px) {
-            font-size: 28px;
-            line-height: 1.18;
-            letter-spacing: 0.03em;
-            margin-bottom: 36px;
-        }
-        @media screen and (min-width: 768px) {
-            margin-bottom: 30px;
-        }
+
         @media screen and (min-width: 1200px) {
             font-size: 36px;
             line-height: 1.16;
@@ -32,6 +24,7 @@
     }
 &__row {
         list-style: none;
+        margin: -15px;
             @media screen and (min-width: 480px) {
                 display: block;
             }
